@@ -1,0 +1,12 @@
+account log:
+data... processd!
+ignored:invalid literal for float(): debits
+data... processd!
+data... processd!
+data... processd!
+ignored:invalid literal for float(): credits
+data... processd!
+data... processd!
+ignored:invalid literal for float(): finance charge/late fees
+data... processd!
+data... processd!
