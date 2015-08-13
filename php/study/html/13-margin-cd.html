@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>margin重叠问题</title>
+<style>
+	#test1{
+		height:100px;
+		background:blue;
+		margin-bottom:50px;
+	}
+	#test2{
+		height:100px;
+		background:green;
+		margin-top:100px;
+	}
+</style>
+</head>
+<body>
+	<div id="test1">
+		相邻普通元素，上下边距，并非简单的相加，<br/>
+		而是取其中较大的边距值<br/>
+	</div>
+	<div id="test2"></div>
+</body>
+</html>

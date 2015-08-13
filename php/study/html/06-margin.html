@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>盒模型之margin设置</title>
+<style>
+	#cont{
+		width:1000px;
+		height:600px;
+		background:green;
+	}
+	div{
+		width:400px;
+		height:200px;
+		background:blue;
+		float:left;
+	}
+	#test{
+		/*
+		margin:10px;
+		*/
+		/*
+		margin-top:10px;
+		margin-left:20px;
+		margin-right:30px;
+		margin-bottom:40px;*/
+		margin:10px 20px 30px 40px;
+		background:red;
+	}
+	#test2{
+		/*
+		margin:10px;
+		*/
+		background:orange;
+	}
+	#test3{
+		width:1000px
+	}
+</style>
+</head>
+<body>
+	<div id="cont">
+		<div id="test"></div>
+		<div id="test2"></div>
+		<div id="test3"></div>
+	</div>
+</body>
+</html>
