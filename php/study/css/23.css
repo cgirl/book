@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+@import url(./23-2.css);
+#test1{
+	background:red;
+	width:200px;
+	height:200px;
+}

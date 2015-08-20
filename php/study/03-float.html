@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>浮动布局</title>
+<style>
+	#side1{
+		width:100px;
+		height:200px;
+		float:left;
+	}
+	#side2{
+		width:100px;
+		height:200px;
+		float:left;
+	}
+	#side3{
+		width:100px;
+		height:100px;
+		background:red;
+	}
+	
+	#side4{
+		width:100px;
+		height:100px;
+		background:yellow;
+	}
+	#side5{
+		height:120px;
+		background:gray;
+	}
+</style>
+</head>
+<body>
+	<div>
+	<div id="side1">
+		<div id="side3">第二象限</div>
+		<div id="side4">第三象限</div>
+	</div>
+	<div id="side2">
+		<div id="side4">第一象限</div>
+		<div id="side3">第四象限</div>
+	</div>
+	</div>
+	<div id="side5"></div>
+</body>
+</html>
