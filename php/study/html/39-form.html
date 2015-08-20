@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>表单</title>
+</head>
+<body>
+	<div>
+		在用户注册的时候，在线报名等场合的时候，需要把用户的信息，填写并提交，这时需要用到
+		表单来收集用户的信息；
+	</div>
+	<form action="http://www.baidu.com/" method="post">
+		<p>用户名：<input type="text" name="name" value="hgjsdhg"></p>
+		<p>密&nbsp;&nbsp;码：<input type="password" name="password"></p>
+		<p>性&nbsp;&nbsp;别：
+			<input type="radio" name="xingbie" value="男" checked="checked"/>男
+			<input type="radio" name="xingbie" value="女" />女
+		</p>
+		<p>爱&nbsp;&nbsp;好：
+			<input type="checkbox" name="hobby" value="篮球" />篮球
+			<input type="checkbox" name="hobby" value="足球" />足球
+			<input type="checkbox" name="hobby" value="台球" checked="checked" />台球
+			<input type="checkbox" name="hobby" value="混球" />混球
+		</p>
+		<p>学&nbsp;&nbsp;历：
+			<select name="xueli">
+				<option value="大学" selected="selected">大学</option>
+				<option value="高中">高中</option>
+				<option value="初中">初中</option>
+			</select>
+		</p>
+		<p>简&nbsp;&nbsp;介：
+			<textarea rows="5" cols="10" name="intro">hjasdhfajghfjasdgf</textarea>
+		</p>
+		<P>
+			上传头像：<input type="file" name="pic"/>
+		</P>
+		<p>
+			隐藏域：<input type="hidden" name="IP" value="192.168.10.233"/>
+		</p>
+		<p>
+			<input type="submit" name="tijiao" value="提交"/>
+		</p>
+	</form>
+</body>
+</html>

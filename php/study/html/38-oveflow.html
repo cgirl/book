@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>overflow溢出处理</title>
+<style>
+	div{
+		width:50px;
+		height:50px;
+		border:1px solid blue;
+		overflow:auto;
+	}
+	p{
+		border:1px solid pink;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p>七夕节，又名乞巧节、七巧节或七姐诞，发源于中国，是华人地区以及部分受汉族文化影响的东亚国家传统节日，农历七月七日夜或七月六日夜妇女在庭院向织女星乞求智巧，故称为“”... </p>
+		<p>定义小的div时，尽量使用overflow，避免不同浏览器有默认的最小值，比如1px宽和1px高的div，在ie下展示至少5像素的div</p>
+	</div>
+	<div>
+	</div>
+</body>
+</html>

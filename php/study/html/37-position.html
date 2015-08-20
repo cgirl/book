@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>相对定位和绝对定位</title>
+<style>
+	#test1{
+		width:300px;
+		height:300px;
+		background:green;
+	}
+	p{
+		margin:0px;
+		padding:0px;
+	}
+	#p1{
+		width:100px;
+		hegiht:100px;
+		background:blue;
+		position:relative;
+		/*top:20px;
+		left:20px;*/
+		right:20px;
+		bottom:20px;
+	}
+	#p2{
+		width:100px;
+		hegiht:100px;
+		background:orange;
+	}
+	#test2{
+		width:300px;
+		height:300px;
+		background:pink;
+		position:relative;
+	}
+	#p3{
+		width:100px;
+		heght:100px;
+		background:black;
+		position:absolute;
+		top:20px;
+		left:30px;
+		z-index:1001;
+	}
+	#p4{
+		width:100px;
+		heght:100px;
+		background:purple;
+		position:absolute;
+		top:30px;
+		left:40px;
+		z-index:1000;
+	}
+</style>
+</head>
+<body>
+	<div id="test1">
+		<p id="p1">相对定位是指在元素和其正常的位置，偏移某些像素</p>
+		<p id="p2">相对定位是指在元素和其正常的位置，偏移某些像素</p>
+	</div>
+	<div id="test2">用绝对定位时，要求父元素有position属性才有效，否则向上依赖，直到找到为止，如果没有找到，则依赖body做定位
+		<p id="p3">绝对定位。是指相对于父元素的top、left、right、bottom</p>
+		<p id="p4">绝对定位。是指相对于父元素的top、left、right、bottom</p>
+	</div>
+</body>
+</html>
