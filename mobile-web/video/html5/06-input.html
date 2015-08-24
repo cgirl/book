@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+	input[type="search"] {-webkit-appearance:textfield;}
+</style>
+<form action="demo.php">
+	search:<input formnovalidate type="search" name="ser"> <br>
+	<br>
+	text:<input type="text" name="ser"> <br>
+	<br>
+	tel:<input type="tel" name="num" title="只能输入11位数字" pattern="^\d{11}$"><br>
+	<br>
+	url:<input type="url" name="url" required title="请正确输入url"><br>
+	<br>
+	email:<input formnovalidate type="email" required name="email"><br>
+	<br>
+	Datetime:<input formnovalidate type="datetime" name="datetime"><br>
+	<br>
+	date:<input formnovalidate type="date" name="date" value="2015-08-23"><br><br>
+	month:<input formnovalidate type="month" name="month" value="2015-07"><br><br>
+	week:<input formnovalidate type="week" name="week" value="2015-W35"><br><br>
+	time:<input formnovalidate type="time" name="time" value="11:11"><br><br>
+	datetime-local:<input formnovalidate type="datetime-local" name="local" value="2015-08-23T21:50"><br><br>
+	number:<input type="number" name="number">
+	
+	<input type="submit" name="dosubmit" value="提交">
+</form>
