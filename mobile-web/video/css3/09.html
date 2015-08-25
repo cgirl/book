@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mninum=1" />
+<title>属性边框</title>
+<style>
+	/* 按指定的边框进行展示 */
+	.one{
+		width:200px;
+		height:200px;
+		-webkit-border-top-left-radius:30px 60px;
+		-webkit-border-top-right-radius:30px 60px;
+		border:2px solid blue;
+	}
+	/* 四个边框圆角相同 */
+	.two{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:30px;
+		border:2px solid red;
+	}
+	/* 四个边框圆角相同 */
+	.three{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:10px 60px;
+		border:2px solid green;
+	}
+	/* 一三象限边框圆角相同，二四象限边框圆角各自按定义的展示 */
+	.four{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:60px 30px 100px;
+		border:2px solid purple;
+	}
+	/* 各自按指定的格式进行展示 */
+	.five{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:30px 40px 50px 60px;
+		border:2px solid orange;
+	}
+	/* 画圆形 */
+	.six{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:100px;
+		border:2px solid pink;
+	}
+	/* 椭圆角 */
+	.july{
+		width:200px;
+		height:200px;
+		-webkit-border-radius:30px 40px 50px 60px/60px 50px 40px 30px;
+		border:2px solid green;
+	}
+</style>
+</head>
+<body>
+	<div class="one"></div><br>
+	<div class="two"></div><br>
+	<div class="three"></div><br>
+	<div class="four"></div><br>
+	<div class="five"></div><br>
+	<div class="six"></div><br>
+	<div class="july"></div><br>
+</body>
+</html>
