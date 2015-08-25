@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum-scale=3, mininum-scale=1, user-scalable=no">
+<title>伪元素选择器</title>
+<style>
+	/* E:first-line  匹配E标签的第一行 */
+	p:first-line{
+		font-size:15px;
+		color:red;
+	}
+	/* E:first-letter  匹配E标签的第一个字符 */
+	div:first-letter{
+		font-size:20px;
+		color:blue;
+	}
+	/*E:before  匹配E标签前的添加内容（也可以用双冒号）*/
+	div:before{
+		font-size:15px;
+		color:pink;
+		content:"E:before  匹配E标签前的添加内容（也可以用双冒号）";
+	}
+	/*E:after  匹配E标签后的添加内容（也可以用双冒号）*/
+	div::after{
+		font-size:15px;
+		color:#E0F;
+		content:"E:after  匹配E标签后的添加内容（也可以用双冒号）";
+	}
+</style>
+</head>
+<body>
+	<p>
+		E:first-line  匹配E标签的第一行;<br>
+		this is second line;<br>
+		this is third line;<br>
+	</p>
+	<div><br>E:first-letter  匹配E标签的第一个字符<br></div>
+</body>
+</html>
