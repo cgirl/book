@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1, user-scalable=no">
+<title>结构性伪类选择器(中)</title>
+<style>
+	/* E:first-child  对一个父元素的第一个子元素指定样式 */
+	li:first-child{
+		font-size:15px;
+		background:red;
+	}
+	/* E:last-chlid  对一个父元素的最后一个子元素指定样式 */
+	li:last-child{
+		font-size:15px;
+		background:pink;
+	}
+	/* E:nth-chlid  对指定序号的子元素设置样式 
+		（:nth-child(odd)偶数个子元设置样式）
+		（:nth-child(even)奇数个子元设置样式）
+	 */
+	li:nth-child(4){
+		font-size:15px;
+		background:purple;
+	}
+	li:nth-child(odd){
+		font-size:15px;
+		color:green;
+	}
+	li:nth-child(even){
+		font-size:15px;
+		color:blue;
+	}
+	/* E:nth-last-chlid  对指定序号的子元素设置样式 (倒数)
+		（:nth-child(odd)偶数个子元设置样式(倒数)）
+		（:nth-child(even)奇数个子元设置样式(倒数)）
+	 */
+	li:nth-last-child(3){
+		font-size:10px;
+	}
+	li:nth-last-child(odd){
+		font-size:15px;
+	}
+	li:nth-last-child(even){
+		font-size:14px;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li>E:first-child  对一个父元素的第一个子元素指定样式 </li>
+		<li>第2个子元素 </li>
+		<li>第3个子元素 </li>
+		<li>第4个子元素：紫色 </li>
+		<li>第5个子元素 </li>
+		<li>第6个子元素 </li>
+		<li>E:last-chlid  对一个父元素的最后一个子元素指定样式 </li>
+	</ul>
+	<ul>
+		<li>第1个子元素：红色</li>
+		<li>第2个子元素 </li>
+		<li>第3个子元素 </li>
+		<li>第4个子元素：紫色 </li>
+		<li>第5个子元素 </li>
+		<li>第6个子元素 </li>
+		<li>最后1个子元素:绿色 </li>
+	</ul>
+</body>
+</html>

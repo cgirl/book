@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1, user-scalable=no">
+<title>结构性伪类选择器(上)</title>
+<style>
+	/* E:root 将样式绑定到页面的根元素中，所谓根元素，是指位于文档树中最顶层结构的元素，
+		在HTML页面中就是指包含着整个页面的<html>部分*/
+	
+	:root{
+		background:pink;
+	}
+	/* E:not 想对某个结构元素使用样式，但是想排除这个结构元素下的子结构元素，则可以使用not元素 */
+	li:not(.two){
+		font-size:15px;
+		color:green;
+	}
+	/* E:empty 指定当元素内容为空白时使用的样式 */
+	li:empty{
+		color:red;
+	}
+	/* E:target 对页面中某个target元素指定样式，该样式只在用户点击页面中的链接，并跳转到target元素后生效 */
+	:target{
+		color:blue;
+	}
+</style>
+</head>
+<body>
+	<a href="#one">one</a>
+	<a href="#two">two</a>
+	<ul>
+		<li>E:not 想对某个结构元素使用样式，但是想排除这个结构元素下的子结构元素，则可以使用not元素</li>
+		<li class="two">被排除的元素</li>
+		<li>E:not 想对某个结构元素使用样式，但是想排除这个结构元素下的子结构元素，则可以使用not元素</li>
+		<li></li>
+		<li>E:empty 指定当元素内容为空白时使用的样式</li>
+	</ul>
+	<a name="one">
+		E:target <br>
+		对页面中某个target元素指定样式，<br>
+		该样式只在用户点击页面中的链接，<br>
+		并跳转到target元素后生效<br>
+	</a>
+	<a name="two">two</a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1, user-scalable=no">
+<title>结构性伪类选择器(下)</title>
+<style>
+	/* E:nth-of-type(n)  与:nth-child作用类似，但是仅匹配使用同种标签的元素 */
+	p:nth-of-type(4){
+		font-size:15px;
+		color:red;
+	}
+	/* E:nth-last-of-type(n)  与:nth-last-child作用类似，但是仅匹配使用同种标签的元素 */
+	p:nth-last-of-type(4){
+		font-size:15px;
+		color:purple;
+	}
+	/* E:nth-child(an+b)  a表示每次循环中共包括几张样式；b表示指定的样式在循环中所在的位置 */
+	p:nth-child(5n+3){
+		font-size:12px;
+		background:pink;
+	}
+	/* E:only-child   匹配父元素下仅有一个子元素 */
+	address:only-child{
+		font-size:10px;
+		background:#0EF;
+	}
+	/* E:only-of-type   匹配父元素下使用同种标签的唯一一个子元素 */
+	address:only-of-type{
+		color:#A22;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p>E:nth-of-type(n)  与:nth-child作用类似，但是仅匹配使用同种标签的元素</p>
+		<p>第2个元素</p>
+		<p>第3个元素</p>
+		<div>内部div1</div>
+		<div>内部div2</div>
+		<div>内部div3</div>
+		<p>第4个元素</p>
+		<p>第5个元素</p>
+		<p>第6个元素</p>
+		<p>第7个元素</p>
+		<p>第8个元素</p>
+		<p>第9个元素</p>
+		<p>第10个元素</p>
+		<p>第11个元素</p>
+		<p>第12个元素</p>
+		<address>address元素</address>
+	</div>
+	<div>
+		<address>E:only-child   匹配父元素下仅有一个子元素</address>
+	</div>
+</body>
+</html>

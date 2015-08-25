@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1">
+<title>结构性伪类选择器（最后一个）</title>
+<style>
+	/* E:enabled	匹配表单中激活的元素 */
+	[type="text"]:enabled{
+		background:#0EF;
+	}
+	/* E:disabled	匹配表单中禁用的元素 */
+	[type="text"]:disabled{
+		background:gray;
+	}
+	/* E:checked	匹配表单中被选中的radio(单选框)或checkbox(复选框)元素 */
+	[type="radio"]:checked+span{
+		color:blue;
+	}
+	input:checked+span{
+		background:pink;
+	}
+	/* E::selection	匹配表单当前选中的元素 */
+	::-moz-selection{background:#000;color:#f00;} /*火狐*/
+	::selection{
+		color:pink;
+	}
+</style>
+</head>
+<body>
+	<div>E::selection匹配表单当前选中的元素</div>
+	<form>
+		text1:<input type="text" name="text1" value="test" /><br>
+		text2:<input type="text" name="text2" disabled value="test" /><br>
+		text3:<input type="text" name="text3" disabled value="test" /><br>
+		text4:<input type="text" name="text4" value="test" /><br>
+		text5:<input type="text" name="text5" value="test" /><br>
+		radio:<input type="radio" name="radio" /><span>足球</span>
+		      <input type="radio" name="radio" /><span>篮球</span>
+		      <input type="radio" name="radio" /><span>乒乓球</span>
+		      <input type="radio" name="radio" /><span>羽毛球</span><br>
+		checkbox:<input type="checkbox" name="checkbox" /><span>菊花</span>
+		      <input type="checkbox" name="checkbox" /><span>月季</span>
+		      <input type="checkbox" name="checkbox" /><span>玫瑰</span>
+		      <input type="checkbox" name="checkbox" /><span>郁金香</span><br>
+	</form>
+</body>
+</html>
