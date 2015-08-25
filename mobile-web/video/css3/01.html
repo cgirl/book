@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>关系选择器</title>
+<style>
+	/* 原始知识回顾 */
+	* {}		/* 通用元素选择器，所有的元素	*/
+	#one {}		/* 元素id选择器				*/
+	.two{}		/* 元素的class选择器		*/
+	p {}		/* 标签元素选择器			*/
+	div p{}		/* 子标签元素选择器			*/
+	div,p{}		/* 多元素选择器				*/
+	
+	/* 多元素组合选择器样式案例，元素均可换为id或者class */
+	p, div, h1{
+		font-size:10px;
+		color:red;
+	}
+	/*后代元素选择器，匹配所有父元素div之后的子元素p，没有辈分选择 */
+	div p{
+		font-size:15px;
+		color:blue;
+	}
+	/* 子代元素选择器，匹配所有的div父元素的子元素p，必须是父子关系 */
+	div > p{
+		font-size:15px;
+		color:green;
+	}
+	#div > p{
+		font-size:20px;
+		color:gray;
+	}
+	/* 毗邻元素选择器，匹配所有紧随前元素div之后的同级元素h3 */
+	div + h3{
+		font-size:15px;
+		color:orange;
+	}
+	/* 同级元素通用选择器，匹配任何在div相邻的同级元素*/
+	div ~ h2{
+		font-size:15px;
+		color:pink;
+	}
+</style>
+</head>
+<!-- css中的样式选择器 -->
+<body>
+	<div id="div">
+		<p>id的子元素</p>
+		<h1>
+			<p>虽然之定义了div下的p的样式，但是这种定义不局限在等级后代，只要是后代均可以做展示，即使是孙子级别或者孙孙子级别的p均可以</p>
+		</h1>
+		<h1>
+			<h2>
+				<b>
+					<p>孙子n代</p>
+				</b>
+			</h2>
+		</h1>
+	</div>
+	<div>
+		<p>子代选择器</p>
+	</div>
+	<div>hello css3</div>
+	<p>hello 多元素组合选择器</p>
+	<h1>hello h1</h1>
+	<h3>this is a up h3, it in near div1</h3>
+	<div>this is a div1</div>
+	<h3>this is a down1 h3, it in near div1</h3>
+	<h3>this is a down2 h3, it in near div1</h3>
+	<h2>this is a up h3, it in near div2</h2>
+	<div>this is a div2</div>
+	<h2>this is a down1 h3, it in near div2</h2>
+	<h2>this is a down2 h3, it in near div2</h2>
+</body>
+</html>

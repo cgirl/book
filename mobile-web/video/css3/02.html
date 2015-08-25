@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+<title>属性选择器</title>
+<style>
+	/* E[attr]：匹配所有具有[attr]属性的E元素，不考虑它的值(如果没有写E元素，只写[attr]则匹配所有元素的[attr]属性) */
+	p[title]{
+		font-size:15px;
+		color:gray;
+	}
+	[title]{
+		font-size:15px;
+		color:red;
+	}
+	/* E[attr=val]:匹配所有具有[attr]属性等于val的E元素 */
+	div[align=center]{
+		font-size:15px;
+		color:green;
+	}
+	[align=center]{
+		font-size:15px;
+		color:blue;
+	}
+	/* E[attr~=val]：匹配所有attr属性具有多个空格分割的值，其中一个值等于val的E元素 */
+	p[class~=one]{
+		font-size:15px;
+		color:pink;
+	}
+	[class~=two]{
+		font-size:15px;
+		color:orange;
+	}
+	/* E[attr|=attr]：匹配所有attr属性具有多个连字号分割的值，其中一个值以"val-"开头的E元素，一般用于lang属性 */
+	h2[lang|="zh"]{
+		font-size:15px;
+		color:purple;
+	}
+	[lang|="zh"]{
+		font-size:15px;
+		color:pink;
+	}
+	/*==================================以上是css2所具备的，下面是css3新增的==============================*/
+	/* E[attr^="val"]:属性attr的值以val开头的E元素 */
+	a[href^="http://"]{
+		font-size:15px;
+		color:green;
+	}
+	[title^="h3"]{
+		font-size:15px;
+		color:red;
+	}
+	/* E[attr$="val"]:属性attr的值以val结尾的E元素 */
+	h4[title$="st"]{
+		font-size:15px;
+		color:#E0F;
+	}
+	[title$="all"]{
+		font-size:15px;
+		color:#0EF;
+	}
+	/* E[attr*="val"]:属性attr的值含有val的E元素 */
+	h6[title*="attrr"]{
+		font-size:15px;
+		color:blue;
+	}
+	[title*="attr"]{
+		font-size:15px;
+		color:#A0A0A0;
+	}
+</style>
+</head>
+<body>
+	<p title="this is a p-title">E[attr]：匹配所有具有attr属性的E元素，不考虑它的值 </p>
+	<h2 title="this is a h2-title">[attr]：匹配所有具有attr属性的元素，不考虑它的值 </h2>
+	<p>11</p>
+	<p>22</p>
+	<div>E[attr=val]:匹配所有具有[attr]属性为val的E元素</div>
+	<div align="left">div:val=left</div>
+	<div align="center">div:val=center</div>
+	<div align="right">div:val=right</div>
+	<p>[attr=val]:匹配所有具有[attr]属性为val的元素</p>
+	<p align="right">p:val=right</p>
+	<p align="center">p:val=center</p>
+	<p align="left">p:val=left</p>
+	<p>E[attr~=val]：匹配所有attr属性具有多个空格分割的值，其中一个值等于val的E元素</p>
+	<p class="one two three">p:one two three</p>
+	<p>[attr~=val]：匹配所有attr属性具有多个空格分割的值，其中一个值等于val的元素</p>
+	<div class="one two">div:one two</div>
+	<h2 lang="zh-cn">E[attr|=attr]：匹配所有attr属性具有多个连字号分割的值，其中一个值以"val-"开头的E元素，一般用于lang属性</h2>
+	<h1 lang="zh-cn">h1元素：[attr|=attr]：匹配所有attr属性具有多个连字号分割的值，其中一个值以"val-"开头的E元素，一般用于lang属性</h1>
+	<div lang="zh-cn">div元素：[attr|=attr]：匹配所有attr属性具有多个连字号分割的值，其中一个值以"val-"开头的元素，一般用于lang属性</div>
+	<div>==以上是css2所具备的，下面是css3新增的==</div>
+	<a href="http://www.baidu.com">E[attr^="val"]:属性attr的值以val开头的E元素</a>
+	<h3 title="h3 title">[attr^="val"]:属性attr的值以val开头的元素</h3>
+	<h4 title="test">E[attr$="val"]:属性attr的值以val结尾的E元素</h4>
+	<h5 title="testall">[attr$="val"]:属性attr的值以val结尾的元素</h5>
+	<h6 title="attrr">E[attr$="val"]:属性attr的值以val结尾的E元素</h6>
+	<h2 title="attr1">[attr$="val"]:属性attr的值以val结尾的元素</h2>
+</body>
+</html>
