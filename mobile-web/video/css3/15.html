@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum-scale=3, mininum=1, user-scalable=no">
+<title>动画属性</title>
+<style>
+	div{
+		width:100px;
+		height:100px;
+		position:absolute;
+		top:30%;
+		left:20%;
+		margin-top:-150px;
+		margin-left:-50px;
+		background:#BBB;
+		border:1px solid red;
+		overflow:hidden;
+	}
+	.one{
+		opacity:0;
+		display:block;
+		font-weight:bold;
+		height:50px;
+		-webkit-animation:donghua 5s ease-out;
+	}
+	.two{
+		opacity:0;
+		display:block;
+		font-size:12px;
+		font-weight:bold;
+		height:50px;
+		-webkit-animation:donghua2 5s ease-out 5s 3;
+	}
+	@-webkit-keyframes donghua{
+		/*from{opacity:0}
+		to{opacity:1}*/
+		0% {opacity:0; -webkit-transform:translate(0px)}
+		20% {opacity:0.2; -webkit-transform:translate(20px)}
+		40% {opacity:0.4; -webkit-transform:translate(40px)}
+		60% {opacity:0.6; -webkit-transform:translate(60px)}
+		100% {opacity:1; -webkit-transform:translate(80px)}
+	}
+	@-webkit-keyframes donghua2{
+		0% {opacity:0; -webkit-transform:translate(10px); color:red}
+		20% {opacity:0.2; -webkit-transform:translate(20px); color:orange}
+		40% {opacity:0.4; -webkit-transform:translate(40px); color:green}
+		60% {opacity:0.6; -webkit-transform:translate(60px); color:blue}
+		100% {opacity:1; -webkit-transform:translate(80px); color:purple}
+	}
+</style>
+</head>
+<body>
+	<div>
+		<span class="one">动画属性</span>
+		<span class="two">动画属性22222</span>
+	</div>
+</body>
+</html>

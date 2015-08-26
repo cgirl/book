@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1, user-scalable=no">
+<title>渐变、倒影属性</title>
+<style>
+	.linear1{
+		width:300px;
+		height:200px;
+		background:-webkit-linear-gradient(top, red, blue);
+	}
+	.linear2{
+		width:300px;
+		height:200px;
+		background:-webkit-linear-gradient(top,red 20%,orange 50%, blue 100%);
+	}
+	.linear3{
+		width:300px;
+		height:200px;
+		background:-webkit-linear-gradient(-45deg, orange, purple);
+	}
+	.linear4{
+		height:200px;
+		background:-webkit-linear-gradient(top, red, orange, yellow, green, cyan, blue, purple);
+	}
+	.radial1{
+		width:200px;
+		height:100px;
+		background:-webkit-radial-gradient(center center, red, green);
+	}
+	.radial2{
+		width:200px;
+		height:100px;
+		background:-webkit-radial-gradient(center center, cyan 25%, red 75%, green 100%);
+	}
+	.radial3{
+		width:200px;
+		height:100px;
+		background:-webkit-radial-gradient(20px 70px, cyan, yellow);
+	}
+	.radial4{
+		width:200px;
+		height:100px;
+		background:-webkit-radial-gradient(center center, circle, red, blue);
+	}
+	.repeat-linear{
+		width:200px;
+		height:100px;
+		background:-webkit-repeating-linear-gradient(top, #fff, #000, #fff 20%);
+	}
+	.repeat-radial{
+		width:200px;
+		height:100px;
+		background:-webkit-repeating-radial-gradient(center center, circle, #fff, #000, #fff 10%);
+	}
+	.white{
+		width:200px;
+		height:200px;
+		border-radius:100px;
+		box-shadow:-5px 5px 15px #000;
+		background:-webkit-radial-gradient(140px 60px, circle, #FFF, #666);
+	}
+</style>
+</head>
+<body>
+	<!-- 线性渐变，简单版本 -->
+	<div class="linear1"></div>
+	<hr>
+	<!-- 线性渐变，设定指定颜色的长度 -->
+	<div class="linear2"></div>
+	<hr>
+	<!-- 线性渐变，改变方向 -->
+	<div class="linear3"></div>
+	<hr>
+	<!-- 彩虹渐变 -->
+	<div class="linear4"></div>
+	<hr>
+	<!-- 径向渐变，简单版本 -->
+	<div class="radial1"></div>
+	<hr>
+	<!-- 径向渐变，指定颜色长度版本 -->
+	<div class="radial2"></div>
+	<hr>
+	<!-- 径向渐变，指定渐变起始位置版本 -->
+	<div class="radial3"></div>
+	<hr>
+	<!-- 径向渐变，指定渐变形状版本 -->
+	<div class="radial4"></div>
+	<hr>
+	<!-- 重复的线性渐变 -->
+	<div class="repeat-linear"></div>
+	<hr>
+	<!-- 重复的径向渐变 -->
+	<div class="repeat-radial"></div>
+	<hr>
+	<div class="white"></div>
+</body>
+</html>

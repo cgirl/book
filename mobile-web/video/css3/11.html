@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1">
+<meta name="viewport" content="initial-scale=1, maxinum=3, mininum=1, user-scalable=no">
 <title>背景属性</title>
 </head>
 <style>
@@ -20,9 +20,15 @@
 		padding-left:20px;
 	}
 	div{
-		width:600px;
-		height:328px;
-		background:url(tu11xuanchuan.png) repeat-x;
+		width:250px;
+		height:200px;
+		background:url(tu11xuanchuan.gif) no-repeat;
+		/*
+		 * background-size:100% 100%;
+		 * background-size:300px 200px;
+		 * background-size:cover;
+		 */
+		background-size:contain;
 	}
 </style>
 <body>
