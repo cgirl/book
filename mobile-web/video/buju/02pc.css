@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+h2{
+	color:red;
+	font-size:4em;
+}
+section#container{
+	width:1060px;
+}
+section#main{
+	width:640px;
+}

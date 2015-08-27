@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1">
+<title>media query的基本使用方法</title>
+<style type="text/css">
+	body,h2{
+		margin:0px;
+		padding:0px;
+		color:yellow;
+	}
+	section#main, header, aside, footer{
+		background:#333;
+		margin:5px 0;
+	}
+	h2{
+		text-align:center;
+		font-size:3em;
+	}
+	section#container{
+		margin:0 auto;
+		width:960px;
+	}
+	header{
+		float:left;
+		width:100%;
+		line-height:100px;
+		background:url(03header.jpg);
+	}
+	#left{
+		float:left;
+		width:200px;
+		line-height:400px;
+		margin-right:10px;
+	}
+	section#main{
+		float:left;
+		width:540px;
+		line-height:400px;
+	}
+	#right{
+		float:left;
+		width:200px;
+		line-height:400px;
+		margin-left:10px;
+	}
+	footer{
+		float:left;
+		width:100%;
+		line-height:80px;
+	}
+	
+</style>
+<link rel="stylesheet" type="text/css" media="screen and (min-width:1000px)" href="02pc.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:640px) and (max-width:1000px)" href="02pad.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:639px)" href="02phone.css">
+</head>
+<body>
+	<section id="container">
+		<header><h2>header</h2></header>
+		<aside id="left"><h2>left</h2></aside>
+		<section id="main"><h2>main</h2></section>
+		<aside id="right"><h2>right</h2></aside>
+		<footer><h2>footer</h2></footer>
+	</section>
+</body>
+</html>

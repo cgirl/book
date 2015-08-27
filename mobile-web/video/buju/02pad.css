@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+h2{
+	color:#E0F;
+	font-size:3em;
+}
+section#container{
+	width:600px;
+}
+#left{
+	width:160px;
+}
+section#main{
+	width:430px;
+}
+#right{
+	display:none;
+}
