@@ -1,4 +1,7 @@
 @CHARSET "UTF-8";
+header{
+	background:url(03-pc-header.png);
+}
 h2{
 	color:red;
 	font-size:4em;
@@ -6,6 +9,16 @@ h2{
 section#container{
 	width:1060px;
 }
+#left{
+	background:url(03-pc-left.png);
+}
 section#main{
 	width:640px;
+	background:url(03-pc-main.png);
+}
+#right{
+	background:url(03-pc-right.png);
+}
+footer{
+	background:url(03-pc-footer.png);
 }
