@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+body{
+	background:#000;
+	color:#FFF;
+	text-align:center;
+}
+
+h2{
+	color:#EEE;
+}
+
+/* device-aspect-ratio后面是具体比例，也可以是最大最小宽高度比，如max-aspect-ratio */
+@media (min-device-aspect-ratio:3/2){
+	body{
+		background:#313d8c;
+	}
+}
