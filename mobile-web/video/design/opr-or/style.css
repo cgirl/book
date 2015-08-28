@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+body{
+	background:#000;
+	color:#FFF;
+	text-align:center;
+}
+
+h2{
+	color:#EEE;
+}
+
+@media screen and (max-height:400px), 
+	   screen and (max-width:800px){
+	body{
+		background:#92afc0;
+	}
+}
