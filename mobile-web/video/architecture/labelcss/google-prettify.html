@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Prettify</title>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="prettify/prettify.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body onload="prettyPrint()">
+
+<div class="container">
+	<h1 class="page-header">Google Prettify<small> 让代码片断变得更漂亮, prettyprint类可以使代码高亮，linenums可以显示行号。但是要配合onload="prettyPrint()使用，需要加载google-prettify的js文件。</small></h1>
+	<pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;<br>  &lt;div class=&quot;row&quot;&gt;<br>    &lt;div class=&quot;span8&quot;&gt; ... &lt;/div&gt;<br>    &lt;div class=&quot;span4&quot;&gt; ... &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+</div>
+
+<script src="../bootstrap/js/jquery-1.7.2.min.js"></script> 
+<script src="../bootstrap/js/bootstrap.js"></script> 
+<script src="prettify/prettify.js"></script>
+
+</body>
+</html>
