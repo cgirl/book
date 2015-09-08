@@ -13,11 +13,14 @@
 <body>
 
 <!-- 1.container居中展示 -->
-<div class="container"> <span style="color:red">嵌套布局和流动布局：<br>
+<div class="container"> 
+	<span style="color:red">嵌套布局和流动布局：<br>
     1.嵌套布局：即一个应用了网格布局的容器中再使用其他网格布局的容器;<br>
     &nbsp;&nbsp;&nbsp;例如:在区块三中，再调整为两栏布局，每栏为2个网格<br>
     2.流动布局：页面会根据窗口的大小自动进行缩放;<br>
-    &nbsp;&nbsp;&nbsp;方法：只需要将布局容器类container换为container-fluid即可，同时将row容器等也添加换为row-fluid</span> 
+    &nbsp;&nbsp;&nbsp;方法：只需要将布局容器类container换为container-fluid即可，同时将row容器等也添加换为row-fluid<br>
+    &nbsp;&nbsp;&nbsp;注意：网格分割是相对的概念，比如区块六，分两栏，则相对于区块六进行分割，会认为区块六是12个网格，则每栏分割为span6
+    </span> 
     
     <!-- 使用教程提供的模板 -->
     <h1 class="page-header">布局<small> 使用Bootstrap嵌套布局</small></h1>
